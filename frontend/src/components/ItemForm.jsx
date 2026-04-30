@@ -8,7 +8,6 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       price: "",
       description: "",
       imageUrl: "",
-      countryOfOrigin: "",
     }
   );
 
@@ -55,9 +54,6 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
-
-      <label>Country of Origin</label>
-      <input name="countryOfOrigin" value={formData.countryOfOrigin} onChange={handleChange} required />
 
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
